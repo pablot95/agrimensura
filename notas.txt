@@ -1,0 +1,209 @@
+quiero es una página web donde se decriben mis servicios de agrimensura y que cuando alguien necesite un agrimensor en chubut o Esquel o la zona, aparezca yo en el mapa y en google con mi pagina. 
+
+Usando html css y js quiero que hagas lo siguiente: en el index, va a estar el hero content, un header que tenga el fondo transparente, pero cuando salga del hero gane trasparencia. tenga un margen top 20px border radius 36. poco padding. Te voy a estar pasando textos de referencia en ingles, quiero que los pases al español y mejores los textos, Tambien los textos hablan de una ubicacion, quiero que uses chubut y Esquel. Tambien menciona mucho a landpro, ese no es el nombre, cambialo por "agrimensura" . el home tiene las siguientes secciones: servicios (sin titulo). A la izquierda: "Trusted Advisors & Enduring Problem Solvers.
+At Landpro we work with clients both big and small across regional New Zealand. Our team has mapped, measured and analysed more land than you can shake a stick at, and talked about water until the cows came home.
+
+Most importantly, we’ve become the trusted advisors & enduring problem solvers of our clients." con un boton de contacto que rediriga a contacto.html . A la derecha cards de servicios con imagen y solo el titulo del servicio. que redirigan a servicios.html (cada servicio a la parte de ese servicio especifico dentro del html)
+
+servicios.html:
+
+1
+Planning & Resource Management
+Clearing the Path for Progress.
+
+Our Planning & Resource Management team is one of New Zealand's strongest and are here to help you navigate red tape, unlock the potential of your land, and secure the approvals your project needs. Whether it’s scoping consents, managing stakeholder consultation, or overseeing the entire process, we offer clear advice, practical solutions, and strong relationships across councils and regulatory bodies.
+
+Planning & Resource Management landpro
+Strategic Planning Advice.
+We assess what you can—and can’t—do with your land or project through detailed consent scoping and due diligence. We help identify requirements early, so you can move forward with clarity and confidence.
+
+landpro
+Regional & District Consenting.
+We manage resource consents across all sectors and scales, including:
+
+Water permits
+Land use consents
+(e.g. earthworks, setbacks, culverts, ponds)
+Discharge consents
+(to land, air, or water)
+Other approvals
+(e.g. easements, DOC concessions, council licences)
+water permits
+Trusted Experts in Planning, Consents, and Compliance.
+Our experience covers the North and South Islands, working with both regional and district councils to deliver smarter solutions and better returns for our clients.
+
+Plan Changes & Submissions.
+Plan Changes & Submissions.
+Need to initiate or respond to a plan change? We can lead private plan change processes or prepare and lodge submissions to regional and district planning documents on your behalf.
+
+Project & Consultation Management.
+Project & Consultation Management.
+From start to finish, we offer project coordination and stakeholder engagement—working with councils, iwi, DOC, Fish & Game and others. We handle affected party consultation to help smooth the path toward successful consenting outcomes.
+
+Planning That Works for You.
+We make complex processes manageable and provide the technical and strategic support needed to keep your project moving. Our goal is to help you meet your objectives while delivering better environments, and better returns.
+
+2
+Environmental Science
+Managing Compliance & Environmental Impact.
+
+We support clients in primary industries, government, and land development to navigate environmental compliance and understand the science to minimise impact. Working alongside our planning, GIS and surveying teams, we offer an integrated approach to resource consenting, monitoring, and environmental data management.
+
+environmental science landpro
+Our Expertise Covers Land, Water, and Data.
+Land
+Terrestrial ecology, contaminated land, landfills.
+
+
+Water
+Freshwater ecology, nutrient management, irrigation, hydrology, hydrogeology, water quality.
+
+
+Data
+Environmental monitoring, analysis, visualisation, GIS and mapping.
+
+environmental science landpro
+Trusted Environmental Solutions for Land and Water.
+Water Takes & Water Quality.
+Water Takes & Water Quality.
+We provide the technical expertise required for water take consents under the RMA, helping you assess yield, manage effects, and design proposals that are both compliant and environmentally sound. Our scientists also assess potential water quality impacts from land and water use, supporting well-informed, efficient consent processes.
+
+Environmental Monitoring.
+Environmental Monitoring.
+We design and deliver monitoring programmes for compliance, health and safety, and sustainability reporting. From well installation to data interpretation, we cover it all—measuring contaminants in soil and water, landfill gas, airborne asbestos, and more. Paired with our aerial and land-based surveyors, we combine spatial and environmental data to give you a clear picture of your environment.
+
+Contaminated Land Management.
+Contaminated Land Management.
+From due diligence to remediation and validation, we help you manage risk at every stage of contaminated site development. Our team handles a wide range of contamination challenges, including asbestos in soil, groundwater contaminants, and landfill gas.
+
+Ecology.
+Ecology.
+We carry out Ecological Impact Assessments (EIAs) tailored to your project’s scale and sector—from energy and infrastructure to agriculture and restoration. Our pragmatic, experienced ecologists quickly identify how your project interacts with the environment and help manage any risks.
+
+End-to-End Support for Smarter Projects.
+No matter the scale or stage, we work with you to reduce complexity, meet compliance, and protect natural values. It’s all part of how we help deliver better environments—and better returns.
+
+
+3
+Farm Environmental Management
+Our Farm Environmental Team are trusted, industry-recognised leaders in farm planning, environmental science, compliance, due diligence, and strategic advice. We stay ahead of regulatory changes and help you make informed, confident decisions on-farm.
+
+farm environmental management landpro
+Practical Advice. Proven Expertise.
+We support the implementation of good management practices and help troubleshoot environmental challenges as they arise. Whether it’s understanding consent conditions or developing compliance schedules, we’re here to ensure you stay on track—starting with a practical on-farm visit.
+
+farm environmental management landpro
+Farm Environmental Planning and Strategic Advice You Can Trust.
+Integrated Farm Plans & Environment Plans.
+Integrated Farm Plans & Environment Plans.
+We prepare tailored, practical Farm Environment Plans and Integrated Farm Plans that align with your business goals, regulatory requirements, and environmental values. We are one of the few companies that hold NZ Farm Assurance Industry membership, ensuring you are getting the best quality outputs.
+
+Environmental Due Diligence & Advice.
+Environmental Due Diligence & Advice.
+Planning a property purchase or new activity? We cut through the jargon and deliver strategic, farm-specific advice on rules, risks, and opportunities—so you know exactly where you stand.
+
+Catchment Group Support.
+Catchment Group Support.
+We help set up and facilitate catchment groups, connect members with the right experts, and support the development of integrated catchment management plans and initiatives.
+
+Fit-for-Purpose Solutions for Productive Land.
+Our goal is to help you meet compliance while improving on-farm outcomes. With practical advice, regional expertise, and a straight-talking approach, we support your success in a changing landscape—delivering better environments, and better returns.
+
+
+4
+Surveying
+Smart Surveying for Smarter Land Use.
+
+At Landpro, we offer a full spectrum of surveying services to support rural, residential, industrial, and infrastructure projects. From boundary definition to large-scale development, our Licensed Cadastral Surveyors and technical specialists deliver precise, practical solutions tailored to your land.
+
+Surveying
+Expert Surveying Services You Can Trust.
+Subdivision & Land Development.
+Subdivision & Land Development.
+We manage all aspects of subdivision—whether you’re creating 2 lots or 200. Our team handles design, layout, compliance, and council liaison to ensure your project is delivered accurately, efficiently, and within the required timeframes.
+
+Engineering Surveying.
+Engineering Surveying.
+From building platforms to full subdivision design, we provide engineering surveying services that streamline development. We can also manage tendering and oversee project delivery to keep things moving smoothly from start to finish.
+
+Irrigation & Dam Surveying.
+Irrigation & Dam Surveying.
+We’ve mapped and contoured thousands of hectares for irrigation, fencing, and water infrastructure. Using ground-based and aerial surveys, we capture pre-design data, then set out works with precision so you can focus on progress, not logistics.
+
+Mine & Quarry Surveying.
+Mine & Quarry Surveying.
+With 20+ years of experience in NZ and Australia, our team provides survey solutions for every stage of mining and quarry operations—from volume calculations and set out, to deformation monitoring and compliance.
+
+Surveying That Moves Projects Forward.
+Whether you're planning a subdivision, drilling a bore, or building infrastructure, we combine experience with innovation to deliver fast, accurate results—backed by strong relationships with councils and regulators.
+
+It’s all part of how we help you make informed land decisions that lead to better environments, and better returns.
+
+
+5
+Aerial Survey
+Fast. Accurate. Reliable.
+
+We deliver high-resolution aerial photography and LiDAR mapping services across New Zealand. Our friendly, collaborative team brings deep experience and a surveyor’s eye to every aerial project—because we don’t just fly planes; we understand land.
+
+aerial survey
+Our Tools.
+Aircraft.
+Aircraft.
+Ideal for large-scale projects we own and lease both aircraft and helicopters and have our own pilots. We capture RGB, RGBI, LiDAR, Bathy-LiDAR, and can access other scanners, to get data at scale.
+
+Quad-Copter Drone.
+Quad-Copter Drone.
+Perfect for smaller, hard-to-reach sites. Fast, cost-effective, and captures medium-resolution imagery.
+
+Aerial data you can trust—delivered quickly, at the right resolution.
+Whether you're mapping terrain, planning infrastructure, or monitoring change over time, our aerial capabilities provide the accurate, high-quality data you need to move forward with confidence.
+
+It’s all part of how we help our clients achieve Better Environments, and Better Returns.
+
+
+6
+Making Data Make Sense.
+
+We turn raw data into smart insights—helping clients better understand their land, operations, and environmental context. Whether you’re dealing with geospatial, environmental, production, or even financial datasets, our team can visualise, interpret, and deliver the information you need to make confident decisions.
+
+Landpro
+Mapping & Data Analysis.
+From custom maps to spatial models, we work across industries to create fit-for-purpose solutions that help you see the full picture—whether it’s for compliance, reporting, or strategic planning.
+
+We combine our geospatial expertise with inputs from our planning, science, and surveying teams to deliver integrated, real-world outputs you can actually use.
+
+Smarter mapping, clearer insights, better decisions.
+It’s all part of how we help deliver Better Environments, and Better Returns.
+
+
+Siguiendo en el index, un about us resumido, con link a la pagina nosotros.html, donde se explaye mas esto, y agregues unas imagenes de personas y nombres X. 
+
+about us:
+
+About us
+we is a team of trusted advisors and problem solvers, delivering industry-leading surveying, planning, and environmental services across regional New Zealand using the latest aerial survey technology. With licensed surveyors, experienced planners, and environmental scientists on board, we deliver accurate, efficient, and creative solutions — helping clients achieve better environments and better returns.
+
+
+Planning and Resource Management.
+The Planning and Resource Management Team are experienced in all facets of resource consenting from advising on and assessing consenting requirements, preparing application for consent, assessment of environmental effects, carrying out consultation with affected parties, and attendance at resource consent hearings if required. Our planning team are always looking to find creative and cost-effective solutions to planning problems.
+
+
+Licensed and Accredited Surveyors.
+Our licensed surveyors are accredited with Land Information New Zealand to carry out land title surveys as well as geodetic maintenance surveys for the New Zealand Government, and provide a wide variety of legal surveying services including subdivisions, boundary definition, and easement surveys.
+
+Licensed and Accredited Surveyors
+The Latest Aerial Survey Technology.
+At Landpro we work with clients both big and small across regional New Zealand. Our team has mapped, measured and analysed more land than you can shake a stick at, and talked about water until the cows came home. Most importantly, we’ve become the trusted advisors & enduring problem solvers of our clients.
+
+We are market leaders when it comes to the adoption of technology, perhaps this is a reflection of the surveyors love for ‘toys’, but either way our latest aerial survey technology means that we are able to provide you with exceptional accuracy across a range of different survey applications. Find out more about our Aerial Surveying and Mapping Services.
+
+aerial surveying
+Environmental and Technical Services.
+Another feather or two in our cap is our Environmental and Technical Services team, providing an extensive range of services to support both the surveying and resource management services we provide. Alongside this are the environmental scientists, providing technical advice and support, particularly in relation to water management issues, groundwater and surface water hydrology, dairy industry expertise and nutrient management advice.
+
+As a team of professionals, we aim to be responsive to our client’s needs, budgets and deadlines as well as being committed to our health, safety and environmental policies, which is why here at Landpro, we are helping to help our clients create better environments and create better returns
+
+Siguiendo en el index, quiero un slide de proyectos realizados (imagenes con texto encima), que se muevan  constantemente de derecha a izquierda, al hacer hover se agranden un poco, y lleven a proyectos.html que por ahora no va a tener nada
+
+Siguiendo en el index, un adelanto de contacto, inventate un texto, con un boton que lleve a la pagina de contacto.html. En contacto html , agrega un formulario de contacto y un maps marcando esquel.
