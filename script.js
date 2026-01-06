@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     const heroSection = document.querySelector('.hero') || document.querySelector('.page-header');
 
-    window.addEventListener('scroll', () => {
-        if (heroSection) {
+    if (heroSection) {
+        window.addEventListener('scroll', () => {
             const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
             if (window.scrollY > heroBottom - 100) { // Trigger slightly before leaving hero
                 header.classList.add('scrolled');
@@ -12,14 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.classList.add('transparent');
                 header.classList.remove('scrolled');
             }
-        }
-    });
+        });
 
-    // Initial check
-    if (window.scrollY > 0) {
-        header.classList.add('transparent'); // Default start
+        // Initial check
+        if (window.scrollY > 0) {
+            header.classList.add('transparent'); // Default start
+        } else {
+            header.classList.add('transparent');
+        }
     } else {
-        header.classList.add('transparent');
+        // No hero section, ensure header is solid (scrolled style)
+        header.classList.add('scrolled');
+        header.classList.remove('transparent');
     }
 
     // Service Cards Animation
