@@ -7,6 +7,7 @@
     <title>Contacto Agrimensor en Esquel | Presupuestos Sin Cargo</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <style>
         body { font-family: 'Montserrat', sans-serif; }
     </style>
@@ -96,20 +97,20 @@
 
         <div class="contact-form-modern">
             <h2>Envíanos un Mensaje</h2>
-            <form action="#" method="POST">
+            <form id="contact-form">
                 <div class="form-group">
-                    <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
+                    <input type="text" name="name" placeholder="Tu Nombre Completo" required>
                 </div>
                 <div class="form-group">
                     <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" name="telefono" placeholder="Tu Teléfono (Opcional)">
+                    <input type="tel" name="phone" placeholder="Tu Teléfono (Opcional)">
                 </div>
                 <div class="form-group">
-                    <textarea name="mensaje" rows="5" placeholder="¿Cómo podemos ayudarte con tu proyecto?" required></textarea>
+                    <textarea name="message" rows="5" placeholder="¿Cómo podemos ayudarte con tu proyecto?" required></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                <button type="submit" class="submit-btn" id="submit-btn">Enviar Mensaje</button>
             </form>
         </div>
     </div>

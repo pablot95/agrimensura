@@ -57,4 +57,33 @@ document.addEventListener('DOMContentLoaded', () => {
     serviceCards.forEach(card => {
         observer.observe(card);
     });
+
+    // Contact Form Handling with EmailJS
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        // Initialize EmailJS
+        emailjs.init("_WA82jXCJEH8sWNSq");
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const submitBtn = document.getElementById('submit-btn');
+            const originalBtnText = submitBtn.innerText;
+            submitBtn.innerText = 'Enviando...';
+            submitBtn.disabled = true;
+
+            emailjs.sendForm('service_lc45de1', 'template_5nysx88', this)
+                .then(function() {
+                    alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
+                    contactForm.reset();
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                }, function(error) {
+                    alert('Hubo un error al enviar el mensaje. Por favor intenta nuevamente o contáctanos por WhatsApp.');
+                    console.error('FAILED...', error);
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                });
+        });
+    }
 });
