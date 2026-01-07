@@ -392,11 +392,21 @@ h2 {
 /* Contact Preview */
 .contact-preview {
     text-align: center;
-    background: linear-gradient(rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.6)), url('images/paisaje.jpg') center/cover;
+    background: linear-gradient(rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.6)), url('images/listoscomenzar.jpeg') center/cover;
     color: var(--white);
     border-radius: 36px;
     margin: 40px auto;
-    max-width: 1400px;
+    max-width: 1200px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-preview p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 30px;
 }
 
 .contact-preview h2 {
@@ -529,6 +539,10 @@ footer {
     justify-content: center;
     color: var(--white);
     text-align: center;
+}
+.contacto-header{
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/fondocontacto.jpeg') center/cover;
 }
 
 .nosotros-header {
@@ -1294,6 +1308,9 @@ footer {
     }
     .experience-content h2 {
     font-size: 2rem;
+    }
+    .contact-preview {
+        height: 50vh;
     }
     
 }
