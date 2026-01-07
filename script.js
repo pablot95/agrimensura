@@ -2,6 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     const heroSection = document.querySelector('.hero') || document.querySelector('.page-header');
 
+    // Hamburger Menu Logic
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+
     if (heroSection) {
         window.addEventListener('scroll', () => {
             const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;

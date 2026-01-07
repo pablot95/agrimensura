@@ -296,7 +296,7 @@ h2 {
 }
 
 .service-card:hover img {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .service-card h4 {
@@ -517,11 +517,6 @@ footer {
     
     .hero-content h1 {
         font-size: 2.5rem;
-    }
-    
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
     }
 }
 
@@ -986,3 +981,344 @@ footer {
     }
 }
 
+
+/* Projects Page Experience Section */
+.experience-section {
+    padding: 100px 40px;
+    margin: 0 auto;
+}
+.experience-container {
+    display: grid;
+    grid-template-columns: 55% 42%;
+    gap: 50px;
+    align-items: center;
+}
+.experience-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 80vh;
+    object-fit: cover;
+}
+.experience-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.experience-content > p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.8;
+}
+.location-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.location-item {
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 20px;
+    transition: transform 0.3s ease;
+}
+.location-item:hover {
+    transform: translateX(5px);
+}
+.location-item h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.location-item p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+    .experience-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+}
+
+/* Portfolio Gallery */
+.portfolio-gallery {
+    padding: 60px 20px;
+    background-color: var(--light-bg);
+}
+
+.portfolio-gallery h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px; /* Uniform height for grid */
+    overflow: hidden;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-image img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-caption h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+/* --- Mobile Responsive & Hamburger Menu --- */
+
+/* Hamburger Button Support */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+/* Specific Media Queries for Mobile phones */
+@media (max-width: 768px) {
+    /* 1. Hamburger Menu Visibility */
+    .hamburger {
+        display: block;
+    }
+
+    /* Change Menu Colors for visibility based on header type */
+    header.transparent .hamburger span {
+        background-color: var(--white);
+    }
+    
+    header.scrolled .hamburger span,
+    header:not(.transparent) .hamburger span {
+        background-color: var(--text-color);
+    }
+
+    /* Nav Links Mobile View */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -120%;
+        height: 60vh;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        padding-top: 20px; /* Space for X button if needed, or just centering */
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        color: var(--text-color) !important; /* Force dark text in menu */
+        font-size: 1.4rem;
+        margin: 10px 0;
+    }
+
+    /* Hamburger Animation for Active State */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+        background-color: var(--text-color); /* Ensure visible on white menu */
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+        background-color: var(--text-color);
+    }
+    
+    /* Z-Index Fix ensure hamburger is above menu */
+    .hamburger { z-index: 2000; }
+    .nav-links { z-index: 1500; }
+
+    /* 2. Smaller Header Title */
+    .logo {
+        font-size: 0.9rem; /* Smaller title */
+        max-width: 100%;
+    }
+
+    /* 3. General H2 Smaller */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* 4. Proyectos: Experience Image 50vh */
+    .experience-image img {
+        height: 40vh;
+        object-fit: cover;
+    }
+    
+    /* 5. Servicios: Hero Margin Top */
+    .services-hero-container {
+        margin-top: 100px;
+    }
+    /* Fix for square hero image on mobile to fit nicely */
+    .hero-image-wrapper {
+        height: 300px;
+    }
+
+    /* 6. Index: Services Home tweaks */
+    .services-home {
+        width: 100%;
+        padding: 40px 15px; /* Less padding */
+        display: block; /* Stack flex/grid items */
+    }
+    
+    .services-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    /* 7. Index: Services Cards 2 Columns */
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Force 2 columns */
+        gap: 15px;
+    }
+    
+    .service-card h4 {
+        font-size: 0.9rem; /* Smaller text for cards */
+        padding: 10px;
+    }
+
+    .service-card {
+        height: auto;
+    }
+
+    /* 8. Index: Hero Text Right Margin Top */
+    .hero-text-right {
+        margin-top: 40px;
+        padding-left: 0; /* Remove border padding from desktop style */
+        border-left: none;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .hero-text-left h1 {
+        font-size: 2.5rem;
+    }
+    /* 1. Navbar Alignment Fix */
+
+    .hamburger {
+        flex-shrink: 0; /* Never shrink the button */
+        margin-left: auto;
+    }
+
+    /* 2. Services Images Visibility Fix */
+    .service-item, 
+    .service-item.reverse {
+        flex-direction: column !important; /* Stack vertical */
+        display: flex;
+    }
+
+    .service-image {
+        width: 100%;
+        min-height: 400px; /* Ensure height for background images */
+        height: auto !important; /* Allow growing */
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Ensure the inline-styled image container behaves */
+    .service-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .nosotros-header{
+        height: 30vh;
+    }
+    .experience-content h2 {
+    font-size: 2rem;
+    }
+    
+}
+
+
+/* Animation Fixes for Mobile */
+
+/* Define the vertical slide animation */
+@keyframes slideInUpMobile {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        /* Override the horizontal offset to vertical offset */
+        transform: translateY(50px) !important; 
+        /* !important used here to ensure we override the desktop base style if conflicts arise, 
+           though cascade order should handle it. Being safe. */
+    }
+
+    .service-card.animate {
+        /* Switch to vertical animation */
+        animation: slideInUpMobile 1s ease-out forwards;
+    }
+}
