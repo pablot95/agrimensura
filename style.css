@@ -1322,3 +1322,13 @@ footer {
         animation: slideInUpMobile 1s ease-out forwards;
     }
 }
+
+    .service-image {
+        /* Disable fixed attachment on mobile to stop the "zoomed in" effect */
+        background-attachment: scroll !important;
+        /* Keep cover so it fits nicely */
+        background-size: cover !important;
+        /* Adjust positioning if needed */
+        background-position: center center !important;
+    }
+
