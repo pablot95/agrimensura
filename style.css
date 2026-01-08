@@ -510,6 +510,11 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll; /* Fix para móviles: desactiva parallax para asegurar que la imagen se vea */
+        background-position: center; /* Centrar la imagen en móviles para mejor encuadre */
+    }
+
     .services-home {
         grid-template-columns: 1fr;
     }
@@ -954,8 +959,8 @@ footer {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -1229,6 +1234,9 @@ footer {
     .hero-image-wrapper {
         height: 300px;
     }
+    .hero{
+        height: 120vh;
+    }
 
     /* 6. Index: Services Home tweaks */
     .services-home {
@@ -1268,6 +1276,7 @@ footer {
     .hero-content {
         flex-direction: column;
         padding: 0 20px;
+        margin-top: 40px;
     }
     
     .hero-text-left h1 {
@@ -1311,6 +1320,10 @@ footer {
     }
     .contact-preview {
         height: 70vh;
+    }
+    .whatsapp-float{
+        right: 15px;
+        bottom: 15px;
     }
     
 }
