@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     const heroSection = document.querySelector('.hero') || document.querySelector('.page-header');
 
-    // Hamburger Menu Logic
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
 
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroSection) {
         window.addEventListener('scroll', () => {
             const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-            if (window.scrollY > heroBottom - 100) { // Trigger slightly before leaving hero
+            if (window.scrollY > heroBottom - 100) {
                 header.classList.add('scrolled');
                 header.classList.remove('transparent');
             } else {
@@ -25,23 +24,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Initial check
         if (window.scrollY > 0) {
             header.classList.add('transparent'); // Default start
         } else {
             header.classList.add('transparent');
         }
     } else {
-        // No hero section, ensure header is solid (scrolled style)
         header.classList.add('scrolled');
         header.classList.remove('transparent');
     }
 
-    // Service Cards Animation
     const serviceCards = document.querySelectorAll('.service-card');
     
     const observerOptions = {
-        threshold: 0.2, // Trigger when 20% of the card is visible
+        threshold: 0.2,
         rootMargin: "0px"
     };
 
@@ -49,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate');
-                observer.unobserve(entry.target); // Only animate once
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -58,10 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // Contact Form Handling with EmailJS
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        // Initialize EmailJS
         emailjs.init("_WA82jXCJEH8sWNSq");
 
         contactForm.addEventListener('submit', function(event) {
